@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   color: #544837;
   width: 100%;
@@ -11,7 +14,8 @@ body {
 
 .heading-h1,
 .heading-h2,
-.heading-h3 {
+.heading-h3,
+.heading-h4 {
   color: #2F281E;
 }
 
@@ -23,12 +27,18 @@ body {
 
 .heading-h2 {
   font-size: 36px;
-  height: 88px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 
 .heading-h3 {
   font-size: 22px;
   font-weight: 600;
+}
+
+.heading-h4 {
+  line-height: 26px;
+  margin-bottom: 10px;
 }
 
 .text-center {
@@ -97,13 +107,67 @@ a:hover {
   font-weight: 700;
 }
 
-.first-section {
-  margin-top: 70px;
+.margin-top-100 {
+  margin-top: 100px;
 }
 
-.text {
+.caption {
   width: 500px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  margin-top: 50px;
+}
+
+.card-item {
+  width: 270px;
+  height: 175px;
+  line-height: 26px;
+}
+
+.button-align {
+  margin: 70px 510px;
+}
+
+.background {
+  background-image: url(../images/bg.svg);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+
+.text {
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 0;
+}
+
+.margin-bottom-30 {
+  margin-bottom: 30px;
+}
+
+.text-width {
+  width: 525px;
+}
+
+.margin-20-0-40 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.image {
+  margin-right: 125px;
+}
+
+.list-tick {
+  list-style-image: url(../icons/tick.svg);
+}
+
+.list-tick li {
+  padding-left: 30px;
 }
