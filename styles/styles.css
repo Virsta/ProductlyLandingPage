@@ -15,13 +15,13 @@ body {
 .heading-h1,
 .heading-h2,
 .heading-h3,
-.heading-h4 {
+.heading-h4,
+.heading-h5 {
   color: #2F281E;
 }
 
 .heading-h1 {
   font-size: 44px;
-  width: 500px;
   height: 110px;
 }
 
@@ -39,6 +39,16 @@ body {
 .heading-h4 {
   line-height: 26px;
   margin-bottom: 10px;
+}
+
+.heading-h5 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.content-width {
+  width: 500px;
 }
 
 .text-center {
@@ -62,17 +72,13 @@ body {
   padding: 0px 20px 0px;
 }
 
-a:hover {
-  color: #FF9900;
-}
-
 .text-decoration {
   text-decoration: none;
   color: #2F281E;
 }
 
 .header {
-  height: 80px;
+  min-height: 80px;
 }
 
 .flex-box {
@@ -81,6 +87,7 @@ a:hover {
   flex-direction: row;
   width: 100%;
   align-items: center;
+  gap: 20px;
 }
 
 .button {
@@ -112,7 +119,6 @@ a:hover {
 }
 
 .caption {
-  width: 500px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
@@ -126,7 +132,7 @@ a:hover {
 
 .card-item {
   width: 270px;
-  height: 175px;
+  min-height: 195px;
   line-height: 26px;
 }
 
@@ -151,23 +157,48 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.text-width {
-  width: 525px;
-}
-
 .margin-20-0-40 {
   margin-top: 20px;
   margin-bottom: 40px;
 }
 
-.image {
+.margin-right {
   margin-right: 125px;
 }
 
-.list-tick {
-  list-style-image: url(../icons/tick.svg);
+.list-tick,
+.list-item {
+  list-style: none;
+  padding: 0;
 }
 
 .list-tick li {
-  padding-left: 30px;
+  gap: 30px;
+  justify-content: flex-start;
+  padding-bottom: 30px;
+}
+
+.input {
+  border-radius: 4px;
+  min-height: 50px;
+  min-width: 340px;
+  border: 1px solid #BCD0E5;
+  margin: 25px 0px;
+}
+
+.list-item li {
+  padding: 15px 0;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+
+.border-top {
+  border-top: 1px solid #BCD0E5;
+  padding-top: 70px;
+}
+
+a:hover {
+  color: #FF9900;
 }
